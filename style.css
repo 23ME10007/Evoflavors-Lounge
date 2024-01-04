@@ -1,0 +1,1115 @@
+
+/* menu   */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+/* menu finish */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    
+    background-color: rgb(2, 32, 152);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav1{
+    width:100%;
+    height: 78px;
+    background-color:rgb(210, 202, 241);
+    display:flex;
+    justify-content:center;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    padding: 1vw 3vw;
+
+
+}
+.tag{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 27px;
+    padding:0 4vw;
+    
+     
+}
+
+.voucher-description{
+    display: flex;
+    flex-direction: column;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    
+}
+.voucher_tag{
+    font-size: 21px;
+    color: rgb(38, 17, 101);
+}
+.offer_time{
+    color: rgb(38, 17, 101);
+    font-size: 12px;
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+   
+}
+.asterisk{
+    color:red;
+}
+
+.nav1 i{
+    color:rgb(29, 7, 109);
+}
+
+
+.nav_fixed{
+    background-color: rgb(22, 6, 81);
+    width:100%;
+    height:98px;
+    display:flex;
+    justify-content: space-around;
+    backdrop-filter: b;
+    
+
+    
+    
+
+}
+
+.nav_fixed img{
+    margin-bottom: 8px;
+    background-color: transparent;
+    height:90px;
+    width:170px;
+
+
+
+
+
+}
+.nav_fixed{
+    display: flex;
+    position:fixed;
+    top:0;
+    padding:0 2vw;
+
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap:5vw;
+    padding:2vw 3vw;
+    overflow: hidden;
+
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* background: linear-gradient(to right #ddeb46 0% #d32b2b 100%); */
+    
+    transition: .7s ease;
+    
+
+
+}
+
+.links a:hover{
+    font-size: 18px;
+    color:rgb(227, 213, 133);
+}
+
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin:25px;
+    background-color: rgb(181, 158, 29);
+    width:35px;
+    height:30px;
+    /* border-radius: 50%; */
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 10px;
+   
+
+
+}
+.background-clip{
+    position: absolute;
+   
+    right:0;
+    bottom:0;
+    z-index: -1;
+
+    
+
+}
+
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width:auto;
+        height: 100%;
+    }
+}
+.menu-present{
+    
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+    color:aliceblue;
+    background-color: rgb(2, 2, 81);
+    width:520px;
+    margin:2vw 1vw;
+    border-radius: 9px;
+    padding:0 2px;
+    left: 4px;
+}
+
+.menu-main{
+    width: 100%;
+    background-image: url(background.avif);
+    height: 700px;
+    object-fit: cover;
+    padding:100px 0 0 0;
+
+}
+/* swiper js css                   */
+
+.swiper {
+    width:70%;
+    height: 500px;
+    
+    border: 2px solid gray;
+    border-radius: 9px;
+   margin:0px;
+    padding: 6vw;
+    
+    align-items: center;
+  }
+
+  .swiper-slide {
+    width: 600px;
+    height: 700px;
+
+    text-align: center;
+    font-size: 18px;
+    background: #f3cd38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   
+    
+
+  }
+
+  .swiper-slide img {
+   
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 6px;
+
+   
+  }
+
+.name-food{
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(139, 119, 5);
+    text-transform: uppercase;
+    width: 100%;
+    margin: 1.2vw 0;
+}
+.food-description{
+    font-size: 19px;
+    font-family:'Oswald', sans-serif;  
+    color: rgb(8, 10, 165);
+    width: 100%;
+    margin: 1.5vw 0;
+    
+    
+}
+
+.price-details{
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(72, 66, 66);
+    font-weight: 900;
+    width: 100%;
+    margin: 1.5vw 0;
+}
+.price-details span{
+    font-size: 13px;
+    color: red;
+}
+.add{
+    font-size: 1.2rem;
+    padding:5px;
+    width:60%;
+    background-color: #b19a41;
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+
+
+}
+.add:hover{
+    background-color: #604e05;
+   color: #f3cd38;
+   border-radius: 10px;
+   transition: all 0.3s ease-out;
+
+}
+
+.craving{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:45px;
+    text-transform: uppercase;
+    color: #604e05;
+    margin:200px 10px 10px 34px;
+    cursor: pointer;
+}
+.btt-within-slide{
+    border: none;
+    background-color: transparent;
+    font-size: 34px;
+    cursor: pointer;
+    margin: 0 10px 10px 34px;
+    color: #8f7a28;
+}
+/* about us */
+.about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.image img{
+    height: 700px;
+    width:500px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 6vw 2vw 6vw 3vw;
+}
+
+.about-us-explore{
+    height: 700px;
+    width:500px;
+    background-color: #f3cd38;
+    border-radius: 5px;
+    margin: 6vw 2vw 6vw 3vw;
+
+}
+.about-us-heading{
+    font-size: 34px;
+    text-transform: uppercase;
+    margin: 2vw 0 0 4vw;
+    font-family: 'Oswald', sans-serif;
+    color:aliceblue
+
+}
+.our-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.our-story h2{
+    margin:2vw;
+    
+    font-family: 'Merriweather', serif;
+}
+
+.our-story span{
+    color: rgb(4, 4, 90);
+    font-size: 6vw;
+    text-shadow:1px 1px 1px #8f7a28
+}
+.view-our-story{
+    font-size: 3vw;
+    color: #5b4a04;
+    margin:0 0 2vw 0;
+
+}
+
+
+
+.content h3{
+    display:flex;
+    color:rgb(186, 169, 16);
+    text-transform: uppercase;
+    font-size: 30px;
+    justify-content: center;
+   
+    font-family:Arial, Helvetica, sans-serif;
+    margin:120px 2vw 12px 2vw;
+
+}
+.bars{
+    display:flex;
+    width:650px;
+    height:5px;
+    margin:2px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(173, 157, 234);
+
+
+}
+.bars2{
+    display:flex;
+    width:700px;
+    height:5px;
+    margin:2px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(173, 157, 234);
+
+}
+.content h1{
+    display: flex;
+    margin: 23px  0 12px 0;
+    justify-content: center;
+    font-size: 46px;
+    text-transform: uppercase;
+    color:rgb(218, 207, 105);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+.footer-session{
+    background-color: rgb(49, 25, 120);
+    margin:0 0 0 0;
+    padding:2vw 2vw;
+}
+.description p{
+    color: white;
+    transition: all .7s  ease-in;
+    padding:12px 0 23px 0;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.description h2{
+    color: gold;
+    transition: all .7s  ease-out;
+    margin: 0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
+
+}
+.des{
+    display: flex;
+    justify-content: space-between;
+    gap:2vw;
+    padding:2vw 0;
+
+    
+}
+.follow{
+    padding:0;
+    color: gold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    
+
+
+}
+.follow h2 {
+    margin: 9px 0;
+}
+.follow a{
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    margin: 0px 4vw 67px 0;  
+    
+    border-radius: 50%;
+    align-items: center;
+    padding:0 2px 2px 2px;
+    
+
+}
+.follow a:hover{
+    
+    background-color: rgb(231, 193, 6);
+    color:rgb(49, 28, 112) ;
+    
+    
+
+}
+.basic-footer {
+    margin-top: 11px;
+    padding:0;
+    color: gold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+
+
+}
+
+
+.basic-footer ul li a{
+    list-style: none;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform:none;
+    margin: 23px 0;
+    color: aliceblue;
+
+}
+
+.email p{
+    margin: 12px 0 ;
+    font-size: 30px;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+}
+.email span{
+    color: aliceblue;
+    margin:0 0 0 7px;
+    cursor: pointer;
+    
+}
+.email span:hover{
+    color: aliceblue;
+    margin:0 0 0 7px;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clear p{
+    color: aliceblue;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+}
+.clear span{
+    color: gold;
+}
+.basic-footer ul li a:hover{
+    text-decoration: underline;
+    color:gold;
+    transition: 0.8s;
+    
+}
+.buttob-coright{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.material-symbols-outlined{
+    position: relative;
+    bottom: 1.5rem;
+    right:1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    
+
+}
+.scroll-top-button span{
+    color: rgb(38, 17, 101);
+    font-size: 2.5rem;
+    transition: .3s ease-out;
+    scroll-behavior: smooth;
+}
+.scroll-top-button span:hover{
+    background-color: goldenrod;
+    transform: translateY(-4px);
+    
+
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height:700px;
+    background-color: rgb(7, 1, 64);
+    flex-direction: row;
+    padding:45px 0;
+
+}
+
+.buy-our-merch{
+    height: 500px;
+    background-image: url(photos/bg2.jpeg);
+    background-size: cover;
+    margin:55px 20px 100px 20px;
+    border-radius: 10px;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buy-our-merch h2
+{
+    font-size: 3vw;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+    margin: 0 20px;
+}
+.buy-our-merch h1{
+    font-size: 4vw;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+    margin: 0px 20px;
+
+}
+
+.buy-our-merch img{
+    height: 40%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+   
+
+}
+.buy-our-merch h3{
+    font-size: 46px;
+    color: aliceblue;
+    font-family: 'Merriweather', serif; 
+    margin: 0 20px;
+
+}
+.buy-our-merch input{
+    font-size: 3vw;
+    border-radius: 4px;
+    border: none;
+    padding:5px;
+    
+}
+
+.book-table {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background-color:  rgb(23, 4, 85);
+    margin:55px 20px 20px 20px;
+    padding:30px 12px;
+
+}
+
+.book-table h1{
+    font-size: 34px;
+    font-family: 'Calligraffitti', cursive;
+    color: aliceblue;
+    
+}
+
+.book-table h1::after{
+    content: '';
+    width:4px;
+    height: 2px;
+    color: #f3cd38;
+}
+
+.book-table p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.online{
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+    margin: 2px;
+}
+
+.bf-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    
+}
+.bf-body{
+    width:100%;
+}
+
+.book-table input,
+.book-table select,
+.book-table textarea{
+    width: 100%;
+    background-color: aliceblue;
+    border: 2px solid #fee890;
+    
+}
+.bf-body-box{
+    padding:20px;
+}
+.bf-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.bf-col-12{
+    width: 100%;
+
+}
+.bf-col-3{
+    width: 30%;
+    
+}
+.bf-col-6{
+    width: 45%;
+    
+}
+
+.bf-col-3 input{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 19px;
+    justify-content: center;
+    background-color: #ffcc00;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+}
+.bf-col-3 input:hover{
+    font-size: 19px;
+    justify-content: center;
+    background-color: #c5a629;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    
+
+    
+}
+
+
+
+@media(max-width:800px){
+    .footer-session{
+        background-color: rgb(38, 17, 101);
+        margin:12px 0 0 0;
+        padding:2vw 3vw;
+    }
+    .basic-footer ul li a{
+        list-style: none;
+        
+        text-decoration: none;
+        font-size: 16px;
+        text-transform:none;
+        margin: 5px 0;
+        color: aliceblue;
+
+    
+    }
+    .basic-footer ul li a:hover{
+        text-decoration: underline;
+        font-size: 17px;
+        transition: 0.8s;
+
+    }
+    .email p{
+        margin: 12px 0 ;
+    font-size: 23px;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+
+    }
+    .clear p{
+        color: aliceblue;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+
+    }
+    
+    .tag{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        padding:0 3vw;
+        
+         
+    }
+
+
+    .voucher_tag{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13px;
+        color:rgb(38, 17, 101);
+        margin:0 2vw;
+    }
+    .offer_time{
+        color:rgb(38, 17, 101); 
+        font-size: 10px;
+        margin:0 2vw;
+
+    
+}
+
+.menu-present{
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    color:aliceblue;
+    background-color: rgb(2, 2, 81);
+    width:270px;
+    
+    border-radius: 9px;
+    
+
+}
+
+.nav1 i{
+    
+    font-size: 25px;
+}
+
+
+.hamburger{
+    display: block;
+
+}
+.hamburger .active .bar:nth-child(2){
+
+    opacity: 0;
+}
+.hamburger .active .bar:nth-child(1){
+
+    transform: translateY(8px)rotate(45deg);
+
+
+}
+.hamburger .active .bar:nth-child(3){
+
+    transform: translateY(-8px)rotate(-45deg);
+    
+
+}
+.links{
+    position: fixed;
+    left: -100%;
+    top:176px;
+    gap:15px;
+    flex-direction: column;
+    background-color: rgb(22, 6, 81);
+    width: 100%;
+    
+    text-align: center;
+    transition: 0.3s;
+
+
+
+}
+.menu-links{
+    margin: 16px 0;
+
+
+}
+.links.active{
+    left:0;
+    
+}
+.bars{
+    display:flex;
+    width:372px;
+    height:5px;
+    margin:2px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(173, 157, 234);
+
+
+}
+.bars2{
+    display:flex;
+    width:372px;
+    height:5px;
+    margin:2px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(173, 157, 234);
+
+}
+.content h1{
+    display: flex;
+    margin: 23px 25vw 23px 25vw;
+    justify-content: center;
+    font-size: 46px;
+    text-transform: uppercase;
+    color:rgb(186, 169, 16) ;
+
+}
+
+
+
+.description p{
+    color: white;
+    transition: all .7s  ease-out;
+    padding:12px 0 23px 0;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+}
+
+.name-food{
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(139, 119, 5);
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+}
+.food-description{
+    font-size: 16px;
+    font-family:'Oswald', sans-serif;  
+    color: rgb(8, 10, 165);
+    width: 100%;
+    padding: 0 3vw;
+    margin:0 3px;
+    
+}
+
+.price-details{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(72, 66, 66);
+    font-weight: 900;
+    width: 90%;
+}
+.swiper-slide img {
+   
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 6px;
+
+   
+  }
+  .add{
+    font-size: 1rem;
+    padding:5px;
+    width:50%;
+    background-color: #b19a41;
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 0 0 19px 0;
+
+
+}
+
+.craving{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:45px;
+    text-transform: uppercase;
+    color: #604e05;
+    margin:100px 10px 10px 34px;
+    cursor: pointer;
+}
+
+
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.image img,
+.about-us-explore{
+    height: 350px;
+    width:400px;
+    
+
+}
+
+.about-us-explore h2,
+.about-us-explore span{
+    font-size: 22px;
+    margin:4vw 4vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-story h2,
+.our-story span{
+    margin: 2vw 2vw 1.4vw 2vw;
+}
+.view-our-story{
+    font-size:23px;
+    background-color: #d2b545;
+    margin: 10px;
+    border-radius: 3px;
+   
+}
+
+.buy-our-merch{
+    width:80%;
+}
+
+.contact{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height:1100px;
+    background-color: rgb(7, 1, 64);
+    flex-direction: column;
+   
+    padding:10px;
+}
+
+
+.buy-our-merch h2
+{
+    font-size: 20px;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+    margin: 2px 20px;
+}
+.buy-our-merch h1{
+    font-size: 25px;
+    color: aliceblue;
+    font-family:  'Caveat', cursive;
+    margin: 2px 20px;
+
+}
+.buy-our-merch input{
+    margin: 2px;
+    border: 2px solid rgb(145, 142, 142);
+    font-size: 20px;
+    border: none;
+}
+
+.book-table {
+
+    height: 600px;
+    width: 80%;
+    background-color: rgb(23, 4, 85);
+    margin: 0 4vw 2vw 4vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3vw 4vw;
+
+}
+
+.book-table h1{
+    font-size: 30px;
+    font-family: 'Calligraffitti', cursive;
+    color: aliceblue;
+    
+}
+
+.book-table p{
+    color: aliceblue;
+    font-size: 14px;
+}
+
+
+
+.bf-body-box{
+    padding:10px;
+}
+.bf-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.bf-col-12{
+    width: 100%;
+
+}
+.bf-col-3{
+    width: 100%;
+    
+}
+.bf-col-6{
+    width: 100%;
+    
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
